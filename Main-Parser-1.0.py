@@ -532,7 +532,7 @@ class SPiDInterpreter:
         # Client-Agent Header Logic
         if client_agent_val != "NULL":
             if str(client_agent_val).upper() == "TCHOA":
-                headers['User-Agent'] = "TechOS-Client/1.0 SPiD-Engine/1.0 (+https://github.com/TechOS-Project/SPiD)" # Example custom header
+                headers['User-Agent'] = "TechOS-Client/1.0 SPiD-Engine/1.0 (+https://github.com/BryOfficial82/TechOS/blob/main/Main-Parser-1.0.py)" # Example custom header
                 print("Client-Agent: TechOS custom header assigned.")
             else:
                 headers['User-Agent'] = str(client_agent_val)
