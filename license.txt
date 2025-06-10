@@ -1,11 +1,14 @@
-TechOS License v1.0
--------------------
-You are allowed to use this software for personal or internal purposes.
+TechOS Parser License v1.0
+--------------------------
 
-You are NOT allowed to:
-- Redistribute the software or its components
-- Modify and share any part of the codebase
-- Claim ownership or authorship
-- Sell or sublicense any part of the software
+You may:
+- Use the software for personal or internal purposes.
+- Run, test, and explore the code as-is.
 
-All rights are reserved by the original creator of TechOS™.
+You may NOT:
+- Redistribute or share the software or any of its parts.
+- Modify and distribute modified versions.
+- Claim ownership or authorship.
+- Sell, sublicense, or publicly host the code.
+
+All rights reserved © Bryan Elias, 2025. Contact Work.Emulation.1@gmail.com for licensing inquiries.
