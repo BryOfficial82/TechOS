@@ -1,0 +1,11 @@
+TechOS License v1.0
+-------------------
+You are allowed to use this software for personal or internal purposes.
+
+You are NOT allowed to:
+- Redistribute the software or its components
+- Modify and share any part of the codebase
+- Claim ownership or authorship
+- Sell or sublicense any part of the software
+
+All rights are reserved by the original creator of TechOS™.
