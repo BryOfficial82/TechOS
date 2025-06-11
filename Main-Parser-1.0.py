@@ -86,8 +86,8 @@ class SPiDInterpreter:
         JUMP (VAR,VAL) [CMD=JUMP_CMD]
 
         # FILE SYSTEM
-        ET (TXT) [CMD=CD_CMD]
-        LI (BIN) (TXT) [CMD=LS_CMD]
+        CD (TXT) [CMD=CD_CMD]
+        LS (BIN) (TXT) [CMD=LS_CMD]
 
         # NETWORK (New commands)
         # UPDATED: Added (VAR,TXT) for language_val as the 5th argument
@@ -532,7 +532,7 @@ class SPiDInterpreter:
         # Client-Agent Header Logic
         if client_agent_val != "NULL":
             if str(client_agent_val).upper() == "TCHOA":
-                headers['User-Agent'] = "TechOS-Client/1.0 SPiD-Engine/1.0 (+https://github.com/BryOfficial82/TechOS/blob/main/Main-Parser-1.0.py)" # Example custom header
+                headers['User-Agent'] = "TechOS-Client/1.1 HotRevamp SPiD-Engine/1.0 (+https://github.com/BryOfficial82/TechOS/blob/main/Main-Parser-1.0.py)" # Example custom header
                 print("Client-Agent: TechOS custom header assigned.")
             else:
                 headers['User-Agent'] = str(client_agent_val)
@@ -660,12 +660,6 @@ class SPiDInterpreter:
                     line = input("SPiD> ")
                     if line.lower() == 'whoami':
                         print("--System Main SPiD--")
-                    elif line.lower() == 'ls': # Keep fallback for direct shell 'ls' to clarify usage
-                        print("[ WARNING ] Use the 'LI' command with flags for listing files.")
-                    elif line.lower() == 'dir': # Keep fallback for direct shell 'dir'
-                        print("[ WARNING ] Use the 'LI' command with flags for listing files.")
-                    elif line.lower() == 'cd': # Keep fallback for direct shell 'cd'
-                        print("[ WARNING ] Use the 'ET' command for changing directories.")
                     elif line.lower() == 'run':
                         print("[     W.I.P     ] Run is not implemented yet, try running your code directly on boot.")
                     elif line.lower() == 'exit':
